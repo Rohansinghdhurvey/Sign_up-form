@@ -20,7 +20,7 @@ var getHash = ( pass, phone ) => {
     // passing data to be hashed
     data = hmac.update(pass);
     // creating the hmac in required format
-    gen_hmac = data.digest('hex');
+    gen_hmac = data.digest('hex');  //check this one and corrent it
     // printing the output on the console
     console.log("hmac : " + gen_hmac);
     return gen_hmac;
